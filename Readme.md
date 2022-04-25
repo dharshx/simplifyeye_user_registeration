@@ -69,7 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 To run both the react app and the server in the backend.
 
-The react app runs in port 3000
+The react app runs in port 3000.
 The server runs in port 8282 which is configurable.
 
 # Stripe
