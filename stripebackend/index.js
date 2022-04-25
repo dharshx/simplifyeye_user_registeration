@@ -4,7 +4,6 @@ const express = require("express");
 //add stripe key
 const stripe = require("stripe")("sk_test_51KsEYXC6Z4D3rvlBD77BSPK9G3IruuxjEjMQmvyyaMF9RtVlhtR8cOkkBAhUzQXKRWoe0KcLQCpd2UG0MouMLLjj00mwpZT8Yu")
 const { v4: uuidv4 } = require('uuid');
-const customer_det = {}
 // uuidv4();
 
 const app = express();
@@ -29,23 +28,9 @@ app.post("/payment", (req,res) => {
         email: token.email,
         source: token.id
     }).then(customer => {
-        stripe.charges.create({
-            amount: product.price * 100,
-            currency: 'usd',
-            customer: customer.id,
-            receipt_email: token.email,
-            description: 'purchase of ${product.name}',
-            shipping: {
-                name: token.card.name,
-                address: {
-                    country: token.card.address_country
-                }
-            }
-        }, {idempontencyKey})
-
-    })
+        res.json(customer)})
     .catch(err => console.log(err));
-})
+});
 
 
 //listen

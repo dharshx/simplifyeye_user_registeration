@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import StripeCheckout from "react-stripe-checkout"
+import axios from 'axios';
 
 function App() {
-
+  let customer_Id = '';
   const [product, setProduct] = useState({
     name: "React from FB",
     price : 10,
@@ -20,21 +21,27 @@ function App() {
       "Content-type": "application/json"
     };
 
-    fetch(`http://localhost:8282/payment`, {
-      method: "POST",
-      headers,
-      body: JSON.stringify(body)
-    }).then(response => {
-      console.log("RESPONSE",response);
-    })
-    .catch(error => console.log(error));
+    axios({url: 'http://localhost:8282/payment',
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json;charset=UTF-8'
+    },
+    data: body})
+  .then(response => {
+    customer_Id = response.data.id
+    console.log(customer_Id);
+    document.getElementById('stripe-block').classList.add('d-none');
+    document.getElementById('id-block').innerText = `User Has been Succesfully created. The user id is ${customer_Id}`;
+    document.getElementById('id-block').classList.remove('d-none');
+  }).catch(error => console.log(error));
   };
 
 
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
         
         <a
           className="App-link"
@@ -49,8 +56,9 @@ function App() {
          name="Create user"
          amount={product.price * 100}
         >
-          <button className="btn-large blue">Create</button>
+          <button  id='stripe-block' className="btn-large blue">Create</button>
         </StripeCheckout>
+        <p className='d-none' id='id-block'></p>
 
       </header>
     </div>

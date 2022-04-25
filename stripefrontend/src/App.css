@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +27,7 @@
 
 .App-link {
   color: #61dafb;
+  padding-bottom: 20px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +37,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.d-none{
+  display: none;
 }
