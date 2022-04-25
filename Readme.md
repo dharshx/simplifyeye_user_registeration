@@ -32,72 +32,45 @@ I am very thankful for this opportunity. I hope this project compliments my appl
 
 # GettingStarted
 
-This is a project which involves Create React App 
+This is a project is done using React in the frontend and Node.js in the backend and Stripe API. 
 
-This project was 
-
+I have used node.js version 1.0.0 with dependencies listed below:-
+"cors": "^2.8.5",
+"express": "^4.17.3",
+"nodemon": "^2.0.15",
+"stripe": "^8.218.0",
+"uuid": "^8.3.2
 
 # Installation
 
-How to install React
-There are a few different ways to install React.
+npm init -> To initialize node in the backend.
+npx create-react-app stripefrontend -> To create react app in the frontend.
 
-To start with, I highly recommend one approach, and that's using the officially recommended tool called create-react-app.
+# Dependencies
 
-create-react-app is a command line application, aimed at getting you up to speed with React in no time.
+For backend:-
+npm i cors express stripe uuid nodemon -> To include all the packages and dependencies to run the files.
 
-You start by using npx, which is an easy way to download and execute Node.js commands without installing them.
-Available Scripts
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-
-### `npm run eject`
-
-*Note: this is a one-way operation. Once you `eject`, you can't go back!*
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-
+In package.json
+ Under scripts, change from test to:-
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  
+  For frontend:-
+  npm install react-stripe-checkout -> To install payment checkout component which is open-source.
+  npm i axios -> For axios installation.
+  
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### `npm start` 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To run both the react app and the server in the backend.
 
+The react app runs in port 3000
+The server runs in port 8282 which is configurable.
 
 # Stripe
 
@@ -106,3 +79,5 @@ Below are the links provided by the company for the Stripe API steup & the conne
 Stripe API Setup: https://stripe.com/docs/development/quickstart
 Stripe Connected Accounts: https://stripe.com/docs/api/connected_accounts
 Stripe Accounts API: https://stripe.com/docs/api/accounts
+
+To view the publishable and secret API keys and record events and log: https://dashboard.stripe.com/test/apikeys
