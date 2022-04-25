@@ -35,10 +35,14 @@ I am very thankful for this opportunity. I hope this project compliments my appl
 This is a project is done using React in the frontend and Node.js in the backend and Stripe API. 
 
 I have used node.js version 1.0.0 with dependencies listed below:-
-"cors": "^2.8.5",
+"cors": "^2.8.5", 
+
 "express": "^4.17.3",
+
 "nodemon": "^2.0.15",
+
 "stripe": "^8.218.0",
+
 "uuid": "^8.3.2
 
 # Installation
@@ -50,6 +54,7 @@ npx create-react-app stripefrontend -> To create react app in the frontend.
 # Dependencies
 
 For backend:-
+
 npm i cors express stripe uuid nodemon -> To include all the packages and dependencies to run the files.
 
 In package.json
@@ -59,7 +64,9 @@ In package.json
   },
   
   For frontend:-
+  
   npm install react-stripe-checkout -> To install payment checkout component which is open-source.
+  
   npm i axios -> For axios installation.
   
 ### Deployment
