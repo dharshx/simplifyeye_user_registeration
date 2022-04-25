@@ -35,6 +35,7 @@ I am very thankful for this opportunity. I hope this project compliments my appl
 This is a project is done using React in the frontend and Node.js in the backend and Stripe API. 
 
 I have used node.js version 1.0.0 with dependencies listed below:-
+
 "cors": "^2.8.5", 
 
 "express": "^4.17.3",
@@ -90,3 +91,5 @@ Stripe Connected Accounts: https://stripe.com/docs/api/connected_accounts
 Stripe Accounts API: https://stripe.com/docs/api/accounts
 
 To view the publishable and secret API keys and record events and log: https://dashboard.stripe.com/test/apikeys
+
+
