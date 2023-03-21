@@ -1,9 +1,31 @@
-# simplifeye_user_registration
+# Simplifeye User Registration
+
+This is a user registration system that enables users to sign up and log in to the SimplifyEye platform. It's a secure and easy-to-use system that utilizes the Stripe API for payment processing.
+
+# Features
+
+User registration and login
+Stripe payment processing
+Secure password storage
+Responsive UI design
+How to Navigate This Project
+
+1. stripefrontend/ contains the frontend code for the user registration system
+2. stripebackend/ contains the backend code for the user registration system
+
+To get started, follow the instructions in each folder's README file.
+
+# Why I Built the Project This Way
+
+I built this project using JavaScript and Node.js because they are versatile and widely-used languages that are great for building web applications. I chose to use the Stripe API because it's a well-documented and easy-to-use payment processing system that integrates well with Node.js.
+
+# If I Had More Time I Would Change This
+
+If I had more time, I would add more payment processing options to the system to make it more flexible for users. I would also add more validation and error handling to the frontend code to ensure a smoother user experience.
 
 # About this Project
 
 The SimplifyEye User Registration system is integrated with Stripe payment processing API, which allows users to securely make payments within the system.
-
 
 The integration includes both frontend and backend code, written in JavaScript and Node.js respectively, and utilizes the Stripe JavaScript and Node.js libraries to communicate with the Stripe API.
 
@@ -67,4 +89,4 @@ Stripe Accounts API: https://stripe.com/docs/api/accounts
 
 To view the publishable and secret API keys and record events and log: https://dashboard.stripe.com/test/apikeys
 
-
+Note: You need to create a .env file in the stripebackend/ directory with your Stripe API keys to run the project.
