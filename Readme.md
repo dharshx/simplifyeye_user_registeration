@@ -2,7 +2,11 @@
 
 # GettingStarted
 
-This is a project is done using React in the frontend and Node.js in the backend and Stripe API. 
+The SimplifyEye User Registration system is integrated with Stripe payment processing API, which allows users to securely make payments within the system.
+
+
+The integration includes both frontend and backend code, written in JavaScript and Node.js respectively, and utilizes the Stripe JavaScript and Node.js libraries to communicate with the Stripe API.
+
 
 I have used node.js version 1.0.0 with dependencies listed below:-
 
