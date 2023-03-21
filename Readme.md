@@ -7,7 +7,7 @@ The SimplifyEye User Registration system is integrated with Stripe payment proce
 
 The integration includes both frontend and backend code, written in JavaScript and Node.js respectively, and utilizes the Stripe JavaScript and Node.js libraries to communicate with the Stripe API.
 
-# GettingStarted 
+# Getting Started 
  
 I have used node.js version 1.0.0 with dependencies listed below:-
 
