@@ -13,8 +13,6 @@ How to Navigate This Project
 1. stripefrontend/ contains the frontend code for the user registration system
 2. stripebackend/ contains the backend code for the user registration system
 
-To get started, follow the instructions in each folder's README file.
-
 # Why I Built the Project This Way
 
 I built this project using JavaScript and Node.js because they are versatile and widely-used languages that are great for building web applications. I chose to use the Stripe API because it's a well-documented and easy-to-use payment processing system that integrates well with Node.js.
