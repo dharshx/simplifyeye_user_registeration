@@ -1,13 +1,14 @@
 # simplifeye_user_registration
 
-# GettingStarted
+# About this Project
 
 The SimplifyEye User Registration system is integrated with Stripe payment processing API, which allows users to securely make payments within the system.
 
 
 The integration includes both frontend and backend code, written in JavaScript and Node.js respectively, and utilizes the Stripe JavaScript and Node.js libraries to communicate with the Stripe API.
 
-
+# GettingStarted 
+ 
 I have used node.js version 1.0.0 with dependencies listed below:-
 
 "cors": "^2.8.5", 
